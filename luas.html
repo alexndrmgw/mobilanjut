@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-   8859-1">
+      <title>Menghitung Luas Segitiga</title>
+      <script type="text/javascript">
+            function hitungLuas(){
+                alas=document.getElementById("Alas").value;
+                tinggi=document.getElementById("Tinggi").value;
+                Luas=1/2*alas*tinggi;
+                document.getElementById("Luas").value = Luas;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Menghitung Luas Segitiga</h1>
+        <label for="alas">Alas:</label><br>
+        <input type="text" id="Alas" name="Alas"><br>
+        <label for="alas">Tinggi:</label><br>
+        <input type="text" id="Tinggi" name="Tinggi"><br>
+        <label for="alas">Luas:</label><br>
+        <input type="text" id="Luas" disabled="true" name="Luas"><br><br><br>
+        <input type="button" id="btnHitung" value="Hitung Luas" onclick="hitungLuas();"><br>
+    <body>
+<html>
